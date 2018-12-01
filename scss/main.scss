@@ -1,4 +1,5 @@
 @import 'config';
+@import 'menu';
 
 * {
     box-sizing: border-box;
@@ -12,6 +13,11 @@ body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+
+    #particles-js{
+        overflow: hidden;
+        z-index: 2;        
+    }
 }
 
 //headings
@@ -56,7 +62,7 @@ header {
 main {
     padding: 4rem;
     height: 100%;
-
+    
     .icons {
         margin-top: 1rem;
 
@@ -65,7 +71,7 @@ main {
 
          &:hover {
           color: $secondary-color;
-          @include easeout();
+          @include easeOut();
          }
         }
     }
