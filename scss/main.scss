@@ -1,5 +1,6 @@
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 * {
     box-sizing: border-box;
@@ -16,10 +17,12 @@ body {
     line-height: 1.5;
 
     #particles-js{
+        position: absolute;
+        // background-size: cover;
         overflow: hidden;
         height: 100%;
         width: 100%;
-        z-index: 2;        
+        z-index: 3;
     }
 }
 
@@ -41,10 +44,6 @@ h3 {
     }
 }
 
-//particles
-
-
-
 // links
 
 a {
@@ -54,7 +53,7 @@ a {
 
 header {
     position: fixed;
-    z-index: 2;
+    // z-index: 3;
     width: 100%;
 }
 
@@ -67,6 +66,9 @@ main {
     height: 100%;
     
     .icons {
+        position: absolute;
+        z-index: 3;
+        justify-content: center;
         margin-top: 1rem;
 
         a {
