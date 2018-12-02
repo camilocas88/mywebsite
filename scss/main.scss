@@ -71,6 +71,10 @@ main {
         justify-content: center;
         margin-top: 1rem;
 
+        &.show {
+            visibility: hidden;
+        }
+
         a {
          padding: 0.4rem;
 
