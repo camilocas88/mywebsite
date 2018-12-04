@@ -199,7 +199,7 @@ main {
   widows: 90%;
   max-width: 1400px;
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(calc(9vw + 9vh), 1fr));
   grid-auto-flow: row dense; }
   .projects img {
@@ -229,6 +229,10 @@ main {
   background: #161a1e;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 769) and (max-width: 1170px) {
+  .projects {
+    grid-gap: 7px; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -276,7 +280,9 @@ main {
     bottom: 20px;
     background: #07090a;
     padding: 15px 10px 10px;
-    border-radius: 50%; } }
+    border-radius: 50%; }
+  .projects {
+    grid-gap: 5px; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
