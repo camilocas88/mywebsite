@@ -28,6 +28,12 @@
         }
     }
   }
+  //About me Section padding
+
+  #about {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 
   ul.menu-nav,
   div.menu-branding {
@@ -58,6 +64,7 @@
   }
 
   .about-info {
+
       grid-template-areas:
       'bioimage'
       'bio'
@@ -67,6 +74,17 @@
 
       grid-template-columns: 1fr;
   }
+  //menu phones
+  .menu-btn {
+    position: fixed;
+    right: 20px;
+    top: auto;
+    bottom: 20px;
+    background: darken($primary-color, 10);
+    padding: 15px 10px 10px;
+    border-radius: 50%
+  }  
+  
 }
 
 @include mediaSm {
