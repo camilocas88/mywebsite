@@ -245,6 +245,40 @@ main {
       cursor: pointer;
       transition: all 0.5s ease-out; }
 
+form {
+  width: 450px;
+  margin: auto;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 10px; }
+  form h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px; }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    border-radius: 15px; }
+  form textarea {
+    min-width: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+  form #button-form {
+    background: #ffe449;
+    padding: 20px;
+    border-radius: 15px; }
+    form #button-form:hover {
+      cursor: pointer;
+      background: #e2c000; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -257,12 +291,15 @@ main {
     grid-gap: 7px; } }
 
 @media screen and (max-width: 768px) {
+  form {
+    width: 100%; }
   main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 3.3rem; }
     main .icons {
       margin: 0;
       position: static; }

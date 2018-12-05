@@ -12,6 +12,10 @@
 }
 
 @include mediaMd {
+  form {
+      width: 100%;
+      
+  }
   main {
       align-items: center;
       text-align: center;
@@ -19,6 +23,7 @@
       .lg-heading {
           line-height: 1;
           margin-bottom: 1rem;
+          font-size: 3.3rem;
       }
       .icons {
         margin: 0;
