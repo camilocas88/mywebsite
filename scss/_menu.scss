@@ -91,6 +91,8 @@
          height: 250px;
          background: url('../img/portrait.jpg');
          border-radius: 50%;
+         background-repeat: no-repeat;
+         background-size: cover;
          border: solid 3px $secondary-color;
         }
     }
