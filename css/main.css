@@ -344,18 +344,7 @@ form {
     padding: 15px 10px 10px;
     border-radius: 50%; }
   .projects {
-    grid-template-columns: repeat(1, minmax(100px, 100%));
-    grid-gap: 5px; }
-    .projects img {
-      display: block;
-      object-fit: cover; }
-      .projects img:hover {
-        opacity: .5;
-        transform: perspective();
-        transition: all 0.5s ease-out; }
-    .projects .item {
-      grid-template-columns: repeat(1, minmax(100px, 100%));
-      grid-gap: 3px; } }
+    display: inline; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
