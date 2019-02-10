@@ -146,20 +146,42 @@ main {
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill,minmax(calc(9vw + 9vh),1fr));
     grid-auto-flow: row dense;
+    position: relative;
 
     img {
         width: 100%;
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
         height: 100%;
         border-radius: 2px;
         box-shadow: 0 0 5px rgba(0, 0, 0, .5);
 
         &:hover {
             // border: 1px solid $secondary-color;
-            opacity: .5;
+            opacity: .3;
             transform: perspective();
             @include easeOut;
         }
     }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+
+        &:hover {
+            opacity: 1;
+        }
+      }
+    
+    
+
     .item:first-child {
         grid-row-start: span 3;
         grid-column-start: span 3;	
