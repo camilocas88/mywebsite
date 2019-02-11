@@ -5,7 +5,6 @@ const menuBranding = document.querySelector('.menu-branding')
 const menuNav = document.querySelector('.menu-nav')
 const navItems = document.querySelectorAll('.nav-item')
 const $icons = document.querySelector('.icons')
-const index = document.querySelectorAll('.item')
 
 
 // Set Initial Of Menu
@@ -21,7 +20,7 @@ function toggleMenu() {
      menuNav.classList.add('show')
      navItems.forEach(item => item.classList.add('show'))
      $icons.classList.add('show')
-     index.forEach(item => item.classList.add('show'))
+    
 //Set Menu State
      showMenu = true
     }else {
@@ -31,7 +30,7 @@ function toggleMenu() {
      menuNav.classList.remove('show')
      navItems.forEach(item => item.classList.remove('show'))
      $icons.classList.remove('show')
-     index.forEach(item => item.classList.remove('show'))
+   
      
 
      //Set Menu State
