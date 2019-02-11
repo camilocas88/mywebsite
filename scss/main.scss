@@ -19,7 +19,6 @@ body {
 
     #particles-js{
         position: absolute;
-        // background-size: cover;
         overflow: hidden;
         height: 100%;
         width: 100%;
@@ -55,7 +54,6 @@ a {
 
 header {
     position: fixed;
-    // z-index: 3;
     width: 100%;
 }
 
@@ -65,7 +63,6 @@ header {
 
 main {
     padding: 2rem;
-    // height: 100%;
     min-height: calc(100vh - 60px);
     
     .icons {
@@ -89,7 +86,6 @@ main {
     }
     // separar  camilo castillo del top de la pagina
     &#home {
-        // display: inline;
         overflow: hidden;
         h1 {
             margin-top: 20vh;
@@ -142,7 +138,7 @@ main {
 
 .projects {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill,minmax(calc(9vw + 9vh),1fr));
@@ -151,39 +147,26 @@ main {
     
 
     img {
-        // position:absolute;
         width: 100%;
         opacity: 1;
         transition: .5s ease;
         backface-visibility: hidden;
         height: 100%;
-        border-radius: 2px;
-        // transition:  opacity 1s ease-in-out;   
+        border-radius: 2px; 
 
         &:hover {
-            // opacity: .3;
-            // box-shadow: 0 0 8px $secondary-color;
-            // filter: opacity(.5);
             transform:scale(1.3);
             box-shadow: 0 0 15px $secondary-color;
             @include easeOut;
         }
     }
 
-    .item{
-        position: relative;
+    .item{        
         overflow: hidden;
-        // z-index: -1;
-
-        &.show {
-            visibility: hidden;
-        }
         
         cursor: pointer;
 
         &:hover {
-            // filter: opacity(.5);
-            // opacity: .5;
             box-shadow: 0 0 15px $secondary-color;
             @include easeOut;
             filter: opacity(.5);
@@ -197,7 +180,7 @@ main {
     }
 
     .item-text {
-        position: absolute;
+        position: fixed;
         width: 100%;
         bottom: 0;
         padding: 10px; 
@@ -207,6 +190,7 @@ main {
         color: thrid-color;
 
         transform: translateY(100%);
+       
 
         p{
             text-align: justify;
@@ -323,6 +307,7 @@ form {
 
 
 @import 'mobile';
+@import 'footer';
 
 
 

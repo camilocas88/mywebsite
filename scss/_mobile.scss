@@ -6,8 +6,7 @@
 @include mediaLg {
     
     .projects {
-        grid-gap: 7px;
-
+        grid-gap: 8px;
     }
 }
 
@@ -29,6 +28,7 @@
 
           
       }
+      
       .icons {
         margin: 0;
         position: static;
