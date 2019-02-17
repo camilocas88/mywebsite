@@ -9,7 +9,7 @@
   },
   "author": "Camilo Castillo",
   "license": "MIT",
-  "homepage":"https://camilocas88.github.io/mywebsite",
+  "homepage": "https://camilocas88.github.io/mywebsite",
   "dependencies": {
     "eslint": "^5.9.0",
     "gh-pages": "^2.0.1",
