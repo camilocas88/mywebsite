@@ -33,16 +33,17 @@ h2,
 h3 {
     margin: 0;
     font-weight: 400;
-    
-    
+
     &.lg-heading {
         font-size: 5rem;
+        animation: fadeLeft 2s ease-out;
     }
 
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, 0), 0.1);
+        animation: fadeRight 2.5s ease-out;
     }
 }
 
@@ -71,6 +72,9 @@ main {
         z-index: 3;
         justify-content: center;
         margin-top: 1rem;
+        animation: ease-in;
+        animation: 3s ease-out pulse;
+        
 
         &.show {
             visibility: hidden;

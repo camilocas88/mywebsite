@@ -1,3 +1,43 @@
+@keyframes pulse {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: .1; }
+  50% {
+    opacity: .5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-3000px); }
+  60% {
+    transform: translateY(25px); }
+  75% {
+    transform: translateY(-10); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(3000px); }
+  60% {
+    transform: translateX(-25px); }
+  75% {
+    transform: translateX(10); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes fadeRight {
+  0% {
+    transform: translateX(-3000px); }
+  60% {
+    transform: translateX(25px); }
+  75% {
+    transform: translateX(-10); }
+  100% {
+    transform: translateX(0); } }
+
 .menu-btn {
   position: absolute;
   cursor: pointer;
@@ -234,13 +274,15 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 5rem; }
+    font-size: 5rem;
+    animation: fadeLeft 2s ease-out; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(29, 34, 39, 0.1); }
+    background: rgba(29, 34, 39, 0.1);
+    animation: fadeRight 2.5s ease-out; }
 
 a {
   color: #fff;
@@ -260,7 +302,9 @@ main {
     position: absolute;
     z-index: 3;
     justify-content: center;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    animation: ease-in;
+    animation: 3s ease-out pulse; }
     main .icons.show {
       visibility: hidden; }
     main .icons a {
