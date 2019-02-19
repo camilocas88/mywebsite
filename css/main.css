@@ -463,8 +463,7 @@ form {
       margin-bottom: 1rem;
       font-size: 3.3rem; }
     main .icons {
-      margin: 0;
-      position: static; }
+      margin: 0; }
     main#home {
       overflow: hidden; }
       main#home h1 {
