@@ -275,7 +275,7 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 5rem;
-    animation: fadeLeft 2s ease-out; }
+    animation: fadeRight 2.5s ease-out; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
