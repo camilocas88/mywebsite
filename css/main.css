@@ -247,7 +247,7 @@ body {
   font-display: auto;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/bg/mac-min.jpg);
+    background: url(../img/bg/mac-min.webp);
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -323,8 +323,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 10px;
-  grid-template-areas: 'bioimage bio bio'
- 'job1 job2 job3';
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -503,11 +502,7 @@ form {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage'
- 'bio'
- 'job1'
- 'job2'
- 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   .menu-btn {
     position: fixed;
