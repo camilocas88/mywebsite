@@ -1,10 +1,13 @@
 @import 'config';
 @import 'menu';
 @import 'modal';
+@import 'type';
 
 
 * {
     box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
 }
 
 body {
@@ -14,7 +17,7 @@ body {
     height: 100vh;
     width: 100%;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-display: auto;
     line-height: 1.5;
 
@@ -32,18 +35,18 @@ h1,
 h2,
 h3 {
     margin: 0;
-    font-weight: 400;
+    font-weight: 200;
 
     &.lg-heading {
         font-size: 5rem;
-        animation: fadeRight 2.5s ease-out;
+        animation: fadeLeft 1.5s ease-out;
     }
 
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
         background: rgba(lighten($primary-color, 0), 0.1);
-        animation: fadeRight 2.5s ease-out;
+        animation: fadeLeft 2s ease-out;
     }
 }
 
@@ -73,7 +76,7 @@ main {
         justify-content: center;
         margin-top: 1rem;
         animation: ease-in;
-        animation: 3s ease-out pulse;
+        animation: fadeLeft 2.2s ease-out;
         
 
         &.show {

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @keyframes pulse {
   0% {
     opacity: 0; }
@@ -20,13 +21,11 @@
 
 @keyframes fadeLeft {
   0% {
-    transform: translateX(3000px); }
-  60% {
-    transform: translateX(-25px); }
-  75% {
-    transform: translateX(10); }
+    opacity: 0;
+    transform: translateY(-20px); }
   100% {
-    transform: translateX(0); } }
+    opacity: 1;
+    transform: translateY(0); } }
 
 @keyframes fadeRight {
   0% {
@@ -231,6 +230,10 @@
   100% {
     transform: translateY(-3000px); } }
 
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777; }
+
 * {
   box-sizing: border-box; }
 
@@ -240,11 +243,12 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-display: auto;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../img/bg/bg1.jpg);
+    background: url(../img/bg/mac-min.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
@@ -270,19 +274,19 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 200; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
     font-size: 5rem;
-    animation: fadeRight 2.5s ease-out; }
+    animation: fadeLeft 1.5s ease-out; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(29, 34, 39, 0.1);
-    animation: fadeRight 2.5s ease-out; }
+    animation: fadeLeft 2s ease-out; }
 
 a {
   color: #fff;
@@ -304,7 +308,7 @@ main {
     justify-content: center;
     margin-top: 1rem;
     animation: ease-in;
-    animation: 3s ease-out pulse; }
+    animation: fadeLeft 2.2s ease-out; }
     main .icons.show {
       visibility: hidden; }
     main .icons a {
