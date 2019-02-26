@@ -260,7 +260,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -2;
-      background: rgba(29, 34, 39, 0.6);
+      background: rgba(29, 34, 39, 0.1);
       overflow: hidden; }
   body #particles-js {
     position: absolute;
@@ -457,7 +457,7 @@ form {
     grid-gap: 8px; } }
 
 @media screen and (max-width: 768px) {
-  body {
+  #bg-img {
     background: url(../img/bg/mac-min-phones.jpg); }
   form {
     width: 100%; }
