@@ -13,6 +13,10 @@
 }
 
 @include mediaMd {
+  body{
+    background: $image-mobile;
+  }
+
   form {
       width: 100%;
       
