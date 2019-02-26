@@ -63,7 +63,7 @@ header {
 }
 
 .text-secondary {
-    color:$secondary-color;
+    color: $secondary-color;
 }
 
 main {
@@ -274,7 +274,8 @@ form {
     border-radius: 10px;
 
     h2{
-        font-size: 3rem;
+        font-size: 4rem;
+        font-weight: 900;
         text-align: center;
         margin: 0;
         margin-bottom: 20px
