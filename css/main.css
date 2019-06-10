@@ -535,6 +535,9 @@ form {
   color: #fff;
   height: 60px; }
 
+.icons-item {
+  margin: 0 10px; }
+
 .icons-item:hover {
   color: #08FDD8;
   transition: all 0.5s ease-out; }
