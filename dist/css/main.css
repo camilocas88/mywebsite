@@ -283,7 +283,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0.2rem 0rem;
     background: rgba(29, 34, 39, 0.1);
     animation: fadeLeft 2s ease-out; }
 
@@ -534,6 +534,9 @@ form {
   background: #161a1e;
   color: #fff;
   height: 60px; }
+
+.icons-item {
+  margin: 0 10px; }
 
 .icons-item:hover {
   color: #08FDD8;

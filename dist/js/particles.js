@@ -22,7 +22,7 @@ var pJS = function(tag_id, params){
         number: {
           value: 400,
           density: {
-            enable: true,
+            enable: false,
             value_area: 800
           }
         },
@@ -72,8 +72,8 @@ var pJS = function(tag_id, params){
           width: 1
         },
         move: {
-          enable: true,
-          speed: 2,
+          enable: false,
+          speed: 4,
           direction: 'none',
           random: false,
           straight: false,
@@ -91,11 +91,11 @@ var pJS = function(tag_id, params){
         detect_on: 'canvas',
         events: {
           onhover: {
-            enable: true,
+            enable: false,
             mode: 'grab'
           },
           onclick: {
-            enable: true,
+            enable: false,
             mode: 'push'
           },
           resize: true

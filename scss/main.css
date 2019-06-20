@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 @-webkit-keyframes pulse {
   0% {
     opacity: 0;
@@ -12,7 +13,6 @@
     opacity: 1;
   }
 }
-
 @keyframes pulse {
   0% {
     opacity: 0;
@@ -236,7 +236,7 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  border: solid 3px #ffe449;
+  border: solid 3px #08FDD8;
 }
 
 .menu .nav-item {
@@ -252,7 +252,7 @@
 }
 
 .menu .nav-item.current > a {
-  color: #ffe449;
+  color: #08FDD8;
 }
 
 .menu .nav-link {
@@ -269,7 +269,7 @@
 }
 
 .menu .nav-link:hover {
-  color: #ffe449;
+  color: #08FDD8;
 }
 
 .nav-item:nth-child(1) {
@@ -485,6 +485,11 @@
   }
 }
 
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -496,17 +501,17 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-display: auto;
+  font-family: 'Raleway', sans-serif;
+  font-display: fallback;
   line-height: 1.5;
 }
 
 body#bg-img {
-  background: url(../img/bg/mac-min.jpg);
+  background: url(../img/bg/mac-min.webp);
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  background-attachment: fixed;
+  max-width: 100%;
+  max-height: 100vh;
 }
 
 body#bg-img:after {
@@ -517,7 +522,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -2;
-  background: rgba(29, 34, 39, 0.6);
+  background: rgba(29, 34, 39, 0.1);
   overflow: hidden;
 }
 
@@ -533,7 +538,7 @@ h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 h1.lg-heading,
@@ -565,7 +570,7 @@ header {
 }
 
 .text-secondary {
-  color: #ffe449;
+  color: #08FDD8;
 }
 
 main {
@@ -595,7 +600,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #ffe449;
+  color: #08FDD8;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -623,7 +628,7 @@ main#home h1 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #ffe449 4px solid;
+  border: #08FDD8 4px solid;
 }
 
 .about-info .bio {
@@ -655,7 +660,7 @@ main#home h1 {
 .about-info .job {
   background: #282f36;
   padding: 0.5rem;
-  border-bottom: #ffe449 5px solid;
+  border-bottom: #08FDD8 5px solid;
 }
 
 .projects {
@@ -683,8 +688,8 @@ main#home h1 {
 .projects img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  -webkit-box-shadow: 0 0 15px #ffe449;
-          box-shadow: 0 0 15px #ffe449;
+  -webkit-box-shadow: 0 0 15px #08FDD8;
+          box-shadow: 0 0 15px #08FDD8;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
@@ -695,8 +700,8 @@ main#home h1 {
 }
 
 .projects .item:hover {
-  -webkit-box-shadow: 0 0 15px #ffe449;
-          box-shadow: 0 0 15px #ffe449;
+  -webkit-box-shadow: 0 0 15px #08FDD8;
+          box-shadow: 0 0 15px #08FDD8;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   -webkit-filter: opacity(0.5);
@@ -771,7 +776,7 @@ main#home h1 {
 .about-info .cer {
   background: #282f36;
   padding: 0.5rem;
-  border-bottom: #ffe449 3px solid;
+  border-bottom: #08FDD8 3px solid;
 }
 
 .about-info .cera {
@@ -782,9 +787,9 @@ main#home h1 {
 .about-info .cer:hover {
   -webkit-transform: translate(0, -8px);
           transform: translate(0, -8px);
-  border-bottom: #ffe449 2px solid;
-  -webkit-box-shadow: 0px 3px 0px 0px #fff3af;
-          box-shadow: 0px 3px 0px 0px #fff3af;
+  border-bottom: #08FDD8 2px solid;
+  -webkit-box-shadow: 0px 3px 0px 0px #6dfee8;
+          box-shadow: 0px 3px 0px 0px #6dfee8;
   background: #495562;
   cursor: pointer;
   -webkit-transition: all 0.5s ease-out;
@@ -804,7 +809,8 @@ form {
 }
 
 form h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: 900;
   text-align: center;
   margin: 0;
   margin-bottom: 20px;
@@ -828,14 +834,14 @@ form textarea {
 }
 
 form #button-form {
-  background: #ffe449;
+  background: #08FDD8;
   padding: 20px;
   border-radius: 15px;
 }
 
 form #button-form:hover {
   cursor: pointer;
-  background: #e2c000;
+  background: #019e86;
 }
 
 @media screen and (min-width: 769) and (max-width: 1170px) {
@@ -846,6 +852,9 @@ form #button-form:hover {
 }
 
 @media screen and (max-width: 768px) {
+  #bg-img {
+    background: url(../img/bg/mac-min-phones.jpg);
+  }
   form {
     width: 100%;
   }
@@ -954,7 +963,7 @@ form #button-form:hover {
 }
 
 .icons-item:hover {
-  color: #ffe449;
+  color: #08FDD8;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }

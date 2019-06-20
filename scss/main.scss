@@ -44,7 +44,7 @@ h3 {
 
     &.sm-heading {
         margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
+        padding: 0.2rem 0rem;
         background: rgba(lighten($primary-color, 0), 0.1);
         animation: fadeLeft 2s ease-out;
     }
